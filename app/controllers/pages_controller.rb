@@ -16,5 +16,7 @@ class PagesController < ApplicationController
   end
 
   def person
+    person1 = Person.new(params[:name], params[:age])
+    @out = person1.introduce
   end
 end
